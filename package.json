@@ -1,11 +1,38 @@
 {
-  "name": "react-native-orientation",
-  "version": "1.17.0",
-  "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "react-native-orientation@git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813",
+  "_id": "react-native-orientation@1.17.0",
+  "_inBundle": false,
+  "_integrity": "sha1-cqfZUb6L45KRR47ioZ0BKm27DsI=",
+  "_location": "/react-native-orientation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "react-native-orientation@git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813",
+    "name": "react-native-orientation",
+    "escapedName": "react-native-orientation",
+    "rawSpec": "git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813",
+    "saveSpec": "git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813",
+    "fetchSpec": "https://github.com/yamill/react-native-orientation.git",
+    "gitCommittish": "f904c885fab8a8262f041b73b786167eeb3a8813"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813",
+  "_spec": "react-native-orientation@git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813",
+  "_where": "/Users/admin/Documents/ReactNativeProjects/mobilegis-uzbrojenieTerenu-demo",
+  "author": {
+    "name": "Yamill Vallecillo",
+    "email": "yamill@gmail.com",
+    "url": "github.com/yamill"
+  },
+  "bugs": {
+    "url": "https://github.com/yamill/react-native-orientation/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis",
+  "homepage": "https://github.com/yamill/react-native-orientation#readme",
   "keywords": [
     "react-component",
     "react-native",
@@ -13,19 +40,16 @@
     "orientation",
     "android"
   ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "react-native-orientation",
   "peerDependencies": {
     "react-native": ">=0.5"
   },
-  "author": "Yamill Vallecillo <yamill@gmail.com> (github.com/yamill)",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yamill/react-native-orientation.git"
   },
-  "bugs": {
-    "url": "https://github.com/yamill/react-native-orientation/issues"
-  },
-  "homepage": "https://github.com/yamill/react-native-orientation#readme",
   "rnpm": {
     "android": {
       "packageInstance": "new OrientationPackage()"
@@ -33,5 +57,9 @@
     "ios": {
       "project": "iOS/RCTOrientation.xcodeproj"
     }
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.17.0"
 }

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.util.DisplayMetrics;
 import android.util.Log;
 
 import com.facebook.common.logging.FLog;
@@ -39,9 +40,16 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
                 Log.d("receiver", String.valueOf(newConfig.orientation));
 
                 String orientationValue = newConfig.orientation == 1 ? "PORTRAIT" : "LANDSCAPE";
+                DisplayMetrics metrics = ctx.getResources().getDisplayMetrics();
+
+
 
                 WritableMap params = Arguments.createMap();
                 params.putString("orientation", orientationValue);
+                params.putDouble("width", metrics.widthPixels / metrics.density);
+                params.putDouble("height", metrics.heightPixels / metrics.density);
+                Log.d("ROZDZIELCZOŚ", metrics.widthPixels + "   " + metrics.heightPixels);
+
                 if (ctx.hasActiveCatalystInstance()) {
                     ctx
                     .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)

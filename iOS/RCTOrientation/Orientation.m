@@ -6,7 +6,7 @@
 #if __has_include(<React/RCTEventDispatcher.h>)
 #import <React/RCTEventDispatcher.h>
 #else
-#import "RCTEventDispatcher.h"
+#import "RCTEventDispatcher.h.h"
 #endif
 
 @implementation Orientation
